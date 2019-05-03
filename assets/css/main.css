@@ -2259,6 +2259,33 @@ input, select, textarea {
 				background-color: #1ebdd1;
 			}
 
+		input[type="submit"].secondary,
+		input[type="reset"].secondary,
+		input[type="button"].secondary,
+		button.secondary,
+		.button.secondary {
+			background-color: #ffffff;
+			box-shadow: none;
+			color: #000000 !important;
+		}
+
+			input[type="submit"].secondary:hover,
+			input[type="reset"].secondary:hover,
+			input[type="button"].secondary:hover,
+			button.secondary:hover,
+			.button.secondary:hover {
+				background-color: #002f55;
+			}
+
+			input[type="submit"].secondary:active,
+			input[type="reset"].secondary:active,
+			input[type="button"].secondary:active,
+			button.secondary:active,
+			.button.secondary:active {
+				background-color: #1ebdd1;
+			}
+			
+
 /* Form */
 
 	form {
