@@ -156,18 +156,9 @@ input, select, textarea {
 		color: #000000;
 	}
 
-	@font-face {
-		font-family: Nanami;
-		src: url("/assets/fonts/Nanami-Regular.otf");
 	}
-
-	@font-face {
-		font-family: ProximaNova;
-		src: url("/assets/fonts/ProximaNova-Regular.otf");
-	}
-
 	body, input, select, textarea {
-		font-family: "ProximaNova";
+		font-family: 'Open Sans', sans-serif;
 		font-size: 1rem;
 		font-weight: 380;
 		line-height: 1.65;
@@ -209,7 +200,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Nanami";
+		font-family: 'Roboto Condensed', sans-serif;
 		text-transform: uppercase;
 		font-weight: 300;
 		line-height: 1.375;
