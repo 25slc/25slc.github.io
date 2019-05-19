@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>25 SLC</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/landing-main.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<h1>25 SLC</h1>
+		<div id="page_wrap">
+			<div class="banner">
+				<div class="typed_wrap">
+					<h2>We <span class="typed"></span></h2>
+				</div>
+			</div>
+		</div>
+		<p id="timer" style="font-size:20px"></p>
+	</header>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="https://youtu.be/C-a5YcDKeLw" class="fab fa-youtube"></a></li>
+			<li><a href="https://www.instagram.com/25thslc/" class="fab fa-instagram"></a></li>
+			<li><a href="mailto:slc@hci.edu.sg" class="fas fa-envelope"></i></a></li>
+			<li><a href="http://hci.sg/25slc/" class="fab fa-chrome"></i></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; 25th Student Leaders Convention</li>
+		</ul>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/landing-main.js"></script>
+	<script src="assets/js/typed.js"></script>
+	<script>
+			$(function () {
+				$(".typed").typed({
+					strings: ["Lead.", "Discuss World Issues.", "Make New Friends.", "Have Fun.",
+						"are The 25th Student Leaders Convention."
+					],
+					// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+					stringsElement: null,
+					// typing speed
+					typeSpeed: 40,
+					// time before typing starts
+					startDelay: 1200,
+					// backspacing speed
+					backSpeed: 10,
+					// time before backspacing
+					backDelay: 500,
+					// loop
+					loop: false,
+					// false = infinite
+					loopCount: 0,
+					// show cursor
+					showCursor: false,
+					// character for cursor
+					cursorChar: "|",
+					// attribute to type (null == text)
+					attr: null,
+					// either html or text
+					contentType: 'html',
+					// call when done callback function
+					callback: function () {},
+					// starting callback function before each string
+					preStringTyped: function () {},
+					//callback for every typed string
+					onStringTyped: function () {},
+					// callback for reset
+					resetCallback: function () {}
+				});
+			});
+		</script>
+		<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("June 2, 2019 00:00:00").getTime();
+	
+			// Update the count down every 1 second
+			var countdownfunction = setInterval(function () {
+	
+				// Get todays date and time
+				var now = new Date().getTime();
+	
+				// Find the distance between now an the count down date
+				var distance = countDownDate - now;
+	
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	
+				// Output the result in an element with id="demo"
+				document.getElementById("timer").innerHTML = days + " days  " + hours + " hrs  " +
+					minutes + " min  " + seconds + " s";
+	
+				// If the count down is over, write some text 
+				if (distance < 0) {
+					clearInterval(countdownfunction);
+					document.getElementById("demo").innerHTML = "Thank you for participating in the 25th SLC.";
+				}
+			}, 1000);
+		</script>
+
+</body>
+</html>
