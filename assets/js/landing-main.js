@@ -38,10 +38,7 @@
 						images: {
 							'images/gallery/full/opening-ceremony.jpg': 'center',
 							'images/gallery/full/night-fiesta.jpg': 'center',
-							'images/gallery/full/discussions-3.jpg': 'center',
-							'images/gallery/full/discussions-6.jpg': 'center',
-							'images/gallery/full/exhibition-7.jpg': 'center',
-							'images/banner.jpg': 'center'							
+							'images/gallery/full/discussions-3.jpg': 'center',						
 						},
 
 					// Delay.
